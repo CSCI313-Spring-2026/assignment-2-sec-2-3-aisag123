@@ -6,15 +6,41 @@
     <title>Document</title>
     <link rel="stylesheet" href="../style.css" />
     <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
     />
   </head>
   <header>
-    <nav class="navBar">
-      <button class="button"><a href="../index.html">Home</a></button>
-      <button class="button"><a href="about.html">About Me</a></button>
-      <button class="button"><a href="projects.html">Projects</a></button>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html">Home</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="projects.html">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </nav>
   </header>
   <body>
@@ -22,17 +48,38 @@
       <h1 class="contactMe">Contact Me</h1>
       <div class="contact">
         <label for="contact-name">Your Name:</label>
-        <input type="text" id="contact-name" name="contact-name" />
+        <input
+          class="form-control"
+          type="text"
+          id="contact-name"
+          name="contact-name"
+        />
         <label for="contact-email">Your Email:</label>
-        <input type="email" id="contact-email" name="contact-email" />
+        <input
+          class="form-control"
+          type="email"
+          id="contact-email"
+          name="contact-email"
+        />
         <label for="contact-message">Your Message:</label>
         <textarea
+          class="form-control"
           name="contact-message"
           id="contact-message"
           cols="30"
         ></textarea>
-        <button type="submit">Send Message</button>
+        <button type="submit" onclick="hi()">Send Message</button>
       </div>
     </main>
   </body>
+  <script>
+    hi = function () {
+      open("/index.html", "_self");
+    };
+  </script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"
+  ></script>
 </html>

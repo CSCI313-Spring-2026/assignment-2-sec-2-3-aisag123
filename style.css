@@ -145,20 +145,20 @@ footer {
     text-align: center;
 }
 
-.scedule {
+.schedule {
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin: 40px auto;
 }
 
-.scedule h1 {
+.schedule h1 {
     text-align: center;
     margin-bottom: 20px;
 }
 
-.scedule th,
-.scedule td {
+.schedule th,
+.schedule td {
     border: 1px solid rgb(200, 200, 200);
     border-radius: 10px;
     padding: 20px 40px;
