@@ -164,3 +164,9 @@ footer {
     padding: 20px 40px;
     text-align: center;
 }
+
+.card {
+    margin: auto; /* auto margins center block elements */
+    /* display: flex; */
+    /* flex: 3; */
+}
